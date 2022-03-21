@@ -1,0 +1,61 @@
+.image {
+  background-color: #FDE4A1
+}
+
+.header {
+  font-family: 'Orbitron', sans-serif;
+	padding-top: 25px;
+	color:black;
+	font-size: 50px;
+	text-align: center;
+  width: 100%;
+}
+body{
+  background-color: black
+}
+.runButton{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  background-color: #00a00f
+}
+.newButton{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  background-color: #085Ed0
+}
+.docButton{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  background-color: #086cb0
+}
+.buttons{
+  text-align: center;
+}
+.editArea{
+  font-family: 'Orbitron', sans-serif;
+  width: 99.5%;
+  height: 25;
+  border-radius: 12px;
+  white-space: pre;
+  background-color: #1c1c1c;
+  /*slightly lighter*/
+  color: #FDE4A1;
+}
+.windowFrame {
+  overflow: hidden;
+  position: relative;
+  height: 75%;
+  width: 99.5%;
+}
+.runFrame{
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+  position: relative;
+  height: 50%;
+  width: 99.5%;
+  background-color: black;
+  color: white;
+}
+.runButton{border-radius: 12px;}
+.newButton{border-radius: 12px;}
+.docButton{border-radius: 12px;}

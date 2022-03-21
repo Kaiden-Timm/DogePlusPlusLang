@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Doge++ Editor</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	  <div class="vl"></div>
+    <div class = "image">
+      <div class = "header">Welcome to the Doge++ Editor!</div>
+      <div class="buttons">
+        <a href=""><button type="button" class="docButton" style="font-size : 20px;">Documentation</button></a>
+        <a href=""><button type="button" class="newButton" style="font-size : 20px;" onclick="">+ New</button></a>
+        <button type="button" class="newButton" style="font-size : 20px;" onclick="downloadFunc();">Download</button>
+          <input type="file" id="fileSelect" accept=".txt" hidden="hidden">
+          <button type="button" class="newButton" style="font-size : 20px;" id="uploadBtn">Upload</button>
+        <button type="button" class="runButton" style="font-size : 20px;" onclick="runFunc();">Run</button>
+      </div>
+    </div>
+    <div name="wrapDiv" id="wrapDiv">
+      <iframe src="https://www.youtube.com" class=windowFrame></iframe>
+        <textarea id="editArea" name="editArea" class = "editArea" rows = "25" style = "font-size: 17px;border: 2px solid white;" onkeypress="onKeyDown();"></textarea> 
+      <textarea id="runArea" name="runArea" class="runFrame" rows="10" cols="25" style="font-size: 17px;" readonly></textarea>
+    </div>
+  </head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+</style>
+  <body>
+    <script src = "Doge.js"></script>
+  </body>
+</html>
