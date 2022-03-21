@@ -283,9 +283,9 @@ function onKeyDown(){
   var key = window.event.keyCode;
   var text = document.getElementById("editArea");
 }
-doge.digHole("n1",4)
-doge.digHole("n2",3)
-doge.choose("1 == 1","doge.bark(doge.think('n1 + n2'))")
+//doge.digHole("n1",4)
+//doge.digHole("n2",3)
+//doge.choose("1 == 1","doge.bark(doge.think('n1 + n2'))")
 //doge.choose('1==1', "doge.bark(doge.think('1+1'))")
 //doge.digHole("name", doge.sniff("What is your name?"))
 //doge.bark("Hello " + doge.findBone("name") + " its nice to meet you!")
