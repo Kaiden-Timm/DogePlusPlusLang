@@ -1,12 +1,22 @@
 .image {
-  background-color: #FDE4A1
+  background-color: #FDE4A1;
 }
-
+.docBack{
+  background-color: #086cb0;
+}
 .header {
   font-family: 'Orbitron', sans-serif;
 	padding-top: 25px;
 	color:black;
 	font-size: 50px;
+	text-align: center;
+  width: 100%;
+}
+.docHead{
+	font-family: 'Orbitron', sans-serif;
+	padding-top: 25px;
+	color:black;
+	font-size: 40px;
 	text-align: center;
   width: 100%;
 }
