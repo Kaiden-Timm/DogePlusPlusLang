@@ -4,6 +4,10 @@
 .docBack{
   background-color: #086cb0;
 }
+.document{
+  color: #FDE4A1;
+  font-family: 'Orbitron', sans-serif;
+}
 .header {
   font-family: 'Orbitron', sans-serif;
 	padding-top: 25px;
