@@ -6,7 +6,30 @@
     <title>Doge++ Documentation</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <div class = "docBack">
-      <div class = "docHead">Welcome to the Doge++ Documentation!</div>
+      <div class = "docHead">Doge++ Documentation</div>
+    </div>
+    <div class="document">
+      <h2>doge.bark(text)</h1>
+      <p class="tab">This method outputs. Enter text or variable for output within the parenthesis. [e.g. doge.bark("Hello World")]</p>
+      <h2>doge.sniff(string)</h2>
+      <p class="tab">This method takes input. Within the parenthesis enter the string you want as your input question/statement. [e.g. doge.sniff("What is your name?")]
+</p>
+      <h2>doge.digHole(varName, data)</h2>
+      <p class="tab">This method creates a variable. For the first parameter, enter the name of your variable as a string and for the second parameter, put the value that you want to be stored in that variable. [e.g. doge.digHole(“test”, 1) or if you wanted to create a list, doge.digHole(“test”, [1,2,3,4]) or doge.digHole(“test”, [“one”, “two”, “three”, “four”]) ] You can output your variable by simply typing, doge.bark(varName), of course the name of your variable would go where varName is.</p>
+      <h2>doge.buryBone(variable, newData)</h2>
+      <p class="tab">This method changes a variable. For the first parameter, enter the name of the variables that you want to change and for the second parameter, put the new value that you want to be stored in that variable. [e.g. doge.buryBone(“test”, 2)] If you want to test this you can output the variable before and after the change occurs.</p>
+      <h2>doge.eat(variable)</h2>
+      <p class="tab">This method deletes a variable. For the parameter, put the name of the variable that you want to change. [e.g. doge.eat(“test”)] If you output the variable it will output null. If you try to manipulate the variable, as shown above, it will result in an error.</p>
+      <h2>doge.poopAgain(varName, items)</h2>
+      <p class="tab">This method adds to the end of a list. For the first parameter, put the name of the list that you want to add to and for the second parameter, put the item(s) that you want to add to the end of the list. [e.g. doge.poopAgain(“test”, 5,”six”)] This language currently only supports one dimensional lists, we hope to fix this issue in the near future.</p>
+      <h2>doge.eatPoop(list, index)</h2>
+      <p class="tab">This method removes an item at a specific index of a list. For the first parameter, put the name of the list that you want to delete from and for the second parameter, put what index you want to delete from. [e.g. doge.eatPoop(“test”, 0)] If you wanted to delete the 1st element from a list you would want to delete at index 0 because the indices start counting at 0.</p>
+      <h2>doge.countPoops(list)</h2>
+      <p class="tab">This method gets the length of a list. For the parameter, put the list that you want to get the length of. [e.g. doge.countPoops(“test”)] If you want to output the length just put that example code inside of an output statement, and replace “test” with the name of your list.</p>
+      <h2>doge.buttScootch(maxRange,minRange, list (if applicable)</h2>
+      <p class="tab">This method generates a random number or a random value in a list. If you are just generating a random number and are not generating a random value in a list, put the maximum number as the first parameter and the minimum number as the second parameter and don’t enter anything in the third parameter. [e.g. doge.buttScootch(1, 10)] To output the number, put it into an output statement. If you are wanting to generate a random value in a list, put 0 for the first two parameters, and for the third parameter put your list. [e.g. doge.buttScootch(0, 0, test)] To output the value, put it into an output statement.</p>
+      <h2>doge.internalClock()</h2>
+      <p class="tab">This method gets the current time in 24 hour time. If you want to output the time just put doge.internalClock() inside of an output statement.</p>
     </div>
   </head>
   <style>
