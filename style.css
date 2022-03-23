@@ -63,7 +63,7 @@ body{
 }
 .runFrame{
   font-family: 'Orbitron', sans-serif;
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
   height: 50%;
   width: 99.5%;
