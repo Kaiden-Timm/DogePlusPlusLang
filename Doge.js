@@ -202,14 +202,9 @@ class Doge {
 }
   howl(errorType, attemptedVal){
     if(errorType == "!var"){
-      log("Error: Bone not foud in hole " + attemptedVal)
+    	log("Error: Bone not foud in hole " + attemptedVal)
     }else if(errorType == "!list"){
-		log("Error: Poop, "+attemptedVal+" not found")
-	} else if(errorType == "math"){
-      log("Error: Doge cannot comprehend " + attemptedVal)
-  } else if(errorType == "!func"){
-    log("Error: Doge does not know how to " + attemptedVal)
-  }
+	log("Error: Poop, "+attemptedVal+" not found")
   }
 }
 doge = new Doge
