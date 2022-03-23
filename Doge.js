@@ -239,7 +239,8 @@ function makeList(string){
   return newList;
 }
 function downloadFunc(){
-  download("Code.txt",document.getElementById("editArea").value);
+  var fileName = prompt("What do you want the name of your file to be?")
+  download(fileName + ".txt",document.getElementById("editArea").value);
 }
 function download(filename, text) {
   var element = document.createElement('a');
