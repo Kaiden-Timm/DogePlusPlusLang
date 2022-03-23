@@ -182,7 +182,7 @@ class Doge {
             for(var y = 0;y<elifCodes[i].length;y++){
               eval(elifCodes[i][y])
             }
-            break;
+            return;
             cameFalse = false;
           }
         }
