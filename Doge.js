@@ -26,7 +26,6 @@ class Doge {
       for(var i = 1;i<arguments.length;i++){
       window[varName].push(arguments[i])
     }
-    
   }
   poopAgain(varName, items){
     if(window[varName] == null || window[varName] == undefined){
@@ -50,9 +49,6 @@ class Doge {
     } else{
       return window[list].length
     }
-  }
-  think(equation){
-    return eval(equation)
   }
   buttScootch(maxRange,minRange, list = 0){
     if(list != 0){
@@ -94,11 +90,7 @@ class Doge {
       for(var i = 1;i<arguments.length;i++){
         list.push(arguments[i]);
       }
-
       window[functionName][1](list)
-  }
-  saveForLater(input){
-
   }
   chaseTail(condition, actions){
     while(eval(condition)){
@@ -122,6 +114,14 @@ class Doge {
       }
     }
     }
+  thinkingIsHard(num1, num2){
+    if(num1 == 55 && num2 == 28){
+      doge.bark(1.987634)
+    }
+  }
+  doge(){
+    doge.bark("ERROR: Doge cannot catch tail")
+  }
   //specify in the documentation that you seperate the different codes with " "
   choose(ifCond,ifCode,numElif,elifCond,elifCode,isElse,elseCode){
     var x = 0
@@ -202,14 +202,18 @@ class Doge {
 }
   howl(errorType, attemptedVal){
     if(errorType == "!var"){
-    	log("Error: Bone not foud in hole " + attemptedVal)
+      log("Error: Bone not foud in hole " + attemptedVal)
     }else if(errorType == "!list"){
-	log("Error: Poop, "+attemptedVal+" not found")
+		log("Error: Poop, "+attemptedVal+" not found")
+	}
   }
 }
-}
 doge = new Doge
-
+//I wonder what this could be?
+function secret(){
+  document.getElementById("editArea").style.color="blue";
+  document.getElementById("headText").style.color="red";
+}
 //START EDITOR
 function log(printStatement){
    var editAreaText = document.getElementById("runArea").value += printStatement + "\n";
@@ -280,72 +284,3 @@ function onKeyDown(){
   var key = window.event.keyCode;
   var text = document.getElementById("editArea");
 }
-//doge.digHole("n1",4)
-//doge.digHole("n2",3)
-//doge.choose("1 == 1","doge.bark(doge.think('n1 + n2'))")
-//doge.choose('1==1', "doge.bark(doge.think('1+1'))")
-//doge.digHole("name", doge.sniff("What is your name?"))
-//doge.bark("Hello " + doge.findBone("name") + " its nice to meet you!")
-//doge.fetch("i",0,"i<8",true,1,"doge.bark(i)")
-//doge.digHole("yes", 0)
-//doge.chaseTail("yes<4","doge.bark(yes)","yes++;");
-//doge.bark("Hello World")
-//doge.digHole("none", 90)
-//doge.bark(doge.findBone("none"))
-//doge.buryBone("none", 99)
-////doge.bark(doge.findBone("non"))
-//at end of function set placeholder vars to null
-//doge.command("test",3,"number1","number2","number3","doge.bark(number1 * number2 * number3)")
-//doge.do("test",6,12,123)
-//doge.do("test", 5,6,7)
-//doge.command("add",2,"num1","num2","doge.bark(num1 + num2)")
-//doge.do("add",4,5)
-//doge.bark(doge.internalClock())
-//doge.bark(doge.buttScootch(0,0,[12,34,57,323]))
-//doge.bark(doge.think("1+45"))
-//doge.bark("Hello Doge!") 
-//doge.digHole("Butt", 5) 
-//doge.bark(doge.findBone("Butt"))
-//doge.buryBone("Butt", 4) Y
-//doge.bark(doge.findBone("Butt"))
-//doge.poop("list", 1,2,3,4,5,6,7)
-//doge.eatPoop("list", 2)
-//doge.bark(doge.countPoops("list"))
-//doge.digHole("butt", 5)
-////doge.eat("butt")
-//doge.findBone("butt")
-//doge.bark(doge.findBone("list"))
-//doge.eatPoop("list", 2)
-//doge.poopAgain("list", 8,9,10)
-//doge.bark(doge.findBone("list"))
-//return something
-//doge.sniff("Input a number")
-//https://levelup.gitconnected.com/how-to-write-function-with-n-number-of-parameters-in-javascript-a916de1be7a2
-/*Doge script
-Doge.bark = output Y
-Doge.howl = error(ex.hole does not exist on line x) Y
-Doge.sniff = input Y
-Doge.sniffButt = API/library CUT
-Doge.digHole = var Y
-Doge.buryBone = change var  Y
-Doge.poop = make list Y
-Doge.poopAgain = append Y
-Doge.eat = del var Y
-Doge.eatPoop = del inputted element from list Y
-Doge.countPoops = length Y
-Doge.pee = return CUT
-Doge.command = function Y
-Doge.reproduce = class  CUTHo
-Doge.chaseTail = while loops Y
-Doge.fetch = for loop Y
-Doge.choose = if statement Y
-Doge.choose = elif statement Y
-Doge.choose = else Y
-Doge.buttScootch = random Y
-Doge.do(functionName) = call function Y
-Doge.think = math Y
-Doge.internalClock = military time Y
-Doge.scratch = write to text files CUT
-Doge.rip = open txt files CUT
-Doge.buryBall = close text file CUT
-Doge.buryForLater = comment Y*/
