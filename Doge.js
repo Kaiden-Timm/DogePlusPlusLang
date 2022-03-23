@@ -207,6 +207,7 @@ class Doge {
 	log("Error: Poop, "+attemptedVal+" not found")
   }
 }
+}
 doge = new Doge
 
 //START EDITOR
