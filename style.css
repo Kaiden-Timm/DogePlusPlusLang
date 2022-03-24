@@ -13,6 +13,7 @@
 .document{
   color: #FDE4A1;
   font-family: 'Orbitron', sans-serif;
+  word-wrap: break-word;
 }
 .tab{margin-left: 40px;}
 .header {
