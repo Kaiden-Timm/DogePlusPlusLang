@@ -182,6 +182,9 @@ class Doge {
             for(var y = 0;y<elifCodes[i].length;y++){
               eval(elifCodes[i][y])
             }
+            //Welcome To the Doge++ code!
+            //most of the answers for the scavenger hunt will be found somewhere in here
+            // Your task for lock one is to make a for loop that prints out all of the even numbers between 1 and 100(not including 100). Your increment variable should be named i and it should be set to 2, and for your answer to be accepted you should have no spaces between commas or quotation marks or less than signs as well as using double qoutation marks, If you are having issues and you beleive your code should be accepted by the form email us at dogeplusplusdev@gmail.com and we will see what we can do.
             return;
             cameFalse = false;
           }
