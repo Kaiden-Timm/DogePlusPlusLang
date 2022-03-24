@@ -10,6 +10,12 @@
   font-family: 'Orbitron', sans-serif;
   text-decoration: none;
 }
+.Banner{
+  text-align: center;
+  color: white;
+  background-color: green;
+  font-family: 'Orbitron', sans-serif;
+}
 .document{
   color: #FDE4A1;
   font-family: 'Orbitron', sans-serif;
