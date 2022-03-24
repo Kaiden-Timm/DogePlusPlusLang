@@ -1,64 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Doge++ Documentation</title>
+    <title>Doge++ Editor</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <div class = "docBack">
-      <div class = "docHead">Doge++ Documentation</div>
+	  <div class="vl"></div>
+    <div class = "image">
+      <div  class = "header"><a class = "headA" id="headText" href="https://www.jigsawplanet.com/?rc=play&pid=30b831c8aacc">Welcome to the Doge++ Editor!</a></div>
+      <div class="buttons">
+        <a href="documentation.html"><button type="button" class="docButton" style="font-size : 20px;">Documentation</button></a>
+        <a href=""><button type="button" class="newButton" style="font-size : 20px;" onclick="">+ New</button></a>
+        <button type="button" class="newButton" style="font-size : 20px;" onclick="downloadFunc();">Download</button>
+          <input type="file" id="fileSelect" accept=".txt" hidden="hidden">
+          <button type="button" class="newButton" style="font-size : 20px;" id="uploadBtn">Upload</button>
+        <button type="button" class="runButton" style="font-size : 20px;" onclick="runFunc();">Run</button>
+      </div>
     </div>
-    <div class="document">
-    <h2>About us:</h2>
-    <p class="tab">We are two 12 and 13 year old kids that had a cool Idea and we saw it through to the end. Doge++ is a simple programming language and we hope that it might make more kids get into CS. Below Every function that we coded(Exept the secret ones) is documeted with a description. We hope that you like our language!</p>
-      <h2>doge.bark(text)</h1>
-      <p class="tab">This method outputs. Enter text or variable for output within the parenthesis. [e.g. doge.bark("Hello World")]</p>
-      <h2>doge.sniff(string)</h2>
-      <p class="tab">This method takes input. Within the parenthesis enter the string you want as your input question/statement. [e.g. doge.sniff("What is your name?")]
-</p>
-      <h2>doge.digHole(varName, data)</h2>
-      <p class="tab">This method creates a variable. For the first parameter, enter the name of your variable as a string and for the second parameter, put the value that you want to be stored in that variable. [e.g. doge.digHole(“test”, 1) or if you wanted to create a list, doge.digHole(“test”, [1,2,3,4]) or doge.digHole(“test”, [“one”, “two”, “three”, “four”]) ] You can output your variable by simply typing, doge.bark(varName), of course the name of your variable would go where varName is.</p>
-      <h2>doge.buryBone(variable, newData)</h2>
-      <p class="tab">This method changes a variable. For the first parameter, enter the name of the variables that you want to change and for the second parameter, put the new value that you want to be stored in that variable. [e.g. doge.buryBone(“test”, 2)] If you want to test this you can output the variable before and after the change occurs.</p>
-      <h2>doge.eat(variable)</h2>
-      <p class="tab">This method deletes a variable. For the parameter, put the name of the variable that you want to change. [e.g. doge.eat(“test”)] If you output the variable it will output null. If you try to manipulate the variable, as shown above, it will result in an error.</p>
-      <h2>doge.poopAgain(varName, items)</h2>
-      <p class="tab">This method adds to the end of a list. For the first parameter, put the name of the list that you want to add to and for the second parameter, put the item(s) that you want to add to the end of the list. [e.g. doge.poopAgain(“test”, 5,”six”)] This language currently only supports one dimensional lists, we hope to fix this issue in the near future.</p>
-      <h2>doge.eatPoop(list, index)</h2>
-      <p class="tab">This method removes an item at a specific index of a list. For the first parameter, put the name of the list that you want to delete from and for the second parameter, put what index you want to delete from. [e.g. doge.eatPoop(“test”, 0)] If you wanted to delete the 1st element from a list you would want to delete at index 0 because the indices start counting at 0.</p>
-      <h2>doge.countPoops(list)</h2>
-      <p class="tab">This method gets the length of a list. For the parameter, put the list that you want to get the length of. [e.g. doge.countPoops(“test”)] If you want to output the length just put that example code inside of an output statement, and replace “test” with the name of your list.</p>
-      <h2>doge.buttScootch(maxRange,minRange, list (if applicable)</h2>
-      <p class="tab">This method generates a random number or a random value in a list. If you are just generating a random number and are not generating a random value in a list, put the maximum number as the first parameter and the minimum number as the second parameter and don’t enter anything in the third parameter. [e.g. doge.buttScootch(1, 10)] To output the number, put it into an output statement. If you are wanting to generate a random value in a list, put 0 for the first two parameters, and for the third parameter put your list. [e.g. doge.buttScootch(0, 0, test)] To output the value, put it into an output statement.</p>
-      <h2>doge.internalClock()</h2>
-      <p class="tab">This method gets the current time in 24 hour time. If you want to output the time just put doge.internalClock() inside of an output statement.</p>
-      <h2>doge.command(name,numPerams,perams,actions)</h2>
-      <p class="tab">This method creates a function. For the first parameter, put the name of the function that you want to create. For the second parameter put the number of parameters that you want your function to have. For the third parameter, put the name(s) of your parameter(s). For the fourth parameter put the code that you want your function to evaluate. [e.g. doge.command(“add”, 2, “num1”, “num2”, doge.bark(num1 + '+' + num2 + '='), doge.bark(num1 + num2))]</p>
-      <h2>doge.do(functionName, parameters)</h2>
-      <p class="tab">This method calls a function. For the first parameter, put the name of the function that you want to call and for the second parameter, put the value(s) that you want for your parameter(s). [e.g. doge.do(“add”, 3, 4)] This would call the add function with the value for num1 as 3 and the value for num2 as 4.</p>
-      <h2>Commenting</h2>
-      <p class="tab">Doge++ only supports single line comments. You comment by typing //. [e.g. //this is a comment] Comments are skipped when you run your code.</p>
-      <h2>doge.chaseTail(condition, actions)</h2>
-      <p class="tab">This method creates a while loop. For the first parameter, put the conditional statement that you want determining if your loop will run or not and for the second parameter put the code that you want to evaluate when the loop is running. Say we already have a counter variable called count created [e.g. doge.chaseTail(“count<5”, doge.bark(count),”count++”)]</p>
-      <h2>doge.fetch(varName, value, equation, varAdd, addBy, actions)</h2>
-      <p class="tab">This method creates a for loop. For the first parameter put the name of the local for loop variable. For the second parameter, put the value that will be stored in that variable. For the third parameter put the conditional statement that you want determining if your loop will run or not. For the fourth parameter, put true/false if you want to add to your variable or not. If your put true for the fourth parameter then in the fith parameter put what you want your variable to add by each time and in the sixth parameter what actions you want your loop to perform, but if you put false for the fourth parameter in the fith parameter you put the actions you want your loop to perform. [e.g. doge.fetch(“i”,0,”i < 5”,true,1,doge.bark(i))]</p><h2>doge.choose(ifCond,ifCode,numElif,elifCond,elifCode,isElse,elseCode)</h2>
-<p class="tab">This method creates an if statement. For the first parameter you put the conditional statement for your if statement, for the second parameter put the code that you want to go in your if statement, if you are not planning on having elifs or elses leave the rest blank. For the third parameter, put the number of else ifs that you want. For the fourth parameter put the condition(s) that you want your else if(s) to check. For the fith parameter put the code you want to go inside of your else if(s) to separate the different else if code put a blank quotation mark when you want to move to the code for your next else if(s) Leave the rest blank if you are not planning on creating any else’s. For the sixth parameter put true/false for if you are going to have an else. For the seventh parameter put the code that you want to go inside of your else. [e.g. doge.choose(“1>2”, doge.bark(‘1>2’), 2, “5<4”,"6<7”,doge.bark(‘5<4’), “”, doge.bark(‘6<7’)) or doge.choose(“1>2”, doge.bark(‘1>2’), 2, “5<4”,"6<5”,doge.bark(‘5<4’), “”, doge.bark(‘6<5’),true,doge.bark(’none were true!’))]</p>
-  <h2>doge.howl(errorType, attemptedVal)</h2>
-  <p class="tab">This method outputs an error. The error detection in doge++ is in simple terms, not very good, for the more experienced programmers you can look in the console by inspecting the page and an error will show up there. The error types are !list, and !var. In the first parameter you put the error type and in the second parameter you put the value that was attempted. [e.g. doge.howl(“!var”, “test”) will result in ERROR: Bone not found in hole test]</p>
-  <h2>Helpful Tips:</h2>
-  <ul>
-    <li>You can use JavaScript functions and methods such as Math() and Date(), but the way that the editor reads the code is line by line, so you can only type one line of JS at a time, so you cannot create a JS function that spans multiple lines</li>
-    <li>If you are participating in the scavenger hunt you can inspect the page or view the Github page <a href="https://github.com/Dogeplusplusdev/DogePlusPlusLang">here</a>.</li>
-    <li>Inside of a function when you are entering the code that you want to run you do not have to put quotation marks around it.</li>
-  </ul>
-  <a href="https://3erc1e4bvanrdzas82cngnw1-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/riddle_4_770.jpg" class="weirdText">Click Me!</a>
+    <div class="Banner">The annual doge++ scavenger hunt is underway! click <a href="https://forms.gle/aKNTMsP6NVKnDmSVA">Here</a> to compete for a $25 amazon gift card!</div>
+    <div name="wrapDiv" id="wrapDiv">
+      <iframe src="documentation.html" class=windowFrame></iframe>
+        <textarea id="editArea" name="editArea" class = "editArea" rows = "25" style = "font-size: 17px;border: 2px solid white;" onkeypress="onKeyDown();"></textarea> 
+      <textarea id="runArea" name="runArea" class="runFrame" rows="10" cols="25" style="font-size: 17px;" readonly></textarea>
     </div>
   </head>
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 </style>
   <body>
-	<script src = "random.js"></script>
-    <script src="script.js"></script>
+    <script src = "Doge.js"></script>
   </body>
 </html>
