@@ -9,6 +9,8 @@
       <div class = "docHead">Doge++ Documentation</div>
     </div>
     <div class="document">
+    <h2>About us:</h2>
+    <p class="tab">We are two 12 and 13 year old kids that had a cool Idea and we saw it through to the end. Doge++ is a simple programming language and we hope that it might make more kids get into CS. Below Every function that we coded(Exept the secret ones) is documeted with a description. We hope that you like our language!</p>
       <h2>doge.bark(text)</h1>
       <p class="tab">This method outputs. Enter text or variable for output within the parenthesis. [e.g. doge.bark("Hello World")]</p>
       <h2>doge.sniff(string)</h2>
@@ -39,10 +41,16 @@
       <h2>doge.chaseTail(condition, actions)</h2>
       <p class="tab">This method creates a while loop. For the first parameter, put the conditional statement that you want determining if your loop will run or not and for the second parameter put the code that you want to evaluate when the loop is running. Say we already have a counter variable called count created [e.g. doge.chaseTail(“count<5”, doge.bark(count),”count++”)]</p>
       <h2>doge.fetch(varName, value, equation, varAdd, addBy, actions)</h2>
-      <p class="tab">This method creates a for loop. For the first parameter put the name of the local for loop variable. For the second parameter, put the value that will be stored in that variable. For the third parameter put the conditional statement that you want determining if your loop will run or not. For the fourth parameter, put true/false if you want to add to your variable or not. If your put true for the fourth parameter then in the fith parameter put what you want your variable to add by each time and in the sixth parameter what actions you want your loop to perform, but if you put false for the fourth parameter in the fith parameter you put the actions you want your loop to perform. [e.g. doge.fetch(“i”,0,”i < 5”,true,1,"doge.bark(i)")]</p><h2>doge.choose(ifCond,ifCode,numElif,elifCond,elifCode,isElse,elseCode)</h2>
+      <p class="tab">This method creates a for loop. For the first parameter put the name of the local for loop variable. For the second parameter, put the value that will be stored in that variable. For the third parameter put the conditional statement that you want determining if your loop will run or not. For the fourth parameter, put true/false if you want to add to your variable or not. If your put true for the fourth parameter then in the fith parameter put what you want your variable to add by each time and in the sixth parameter what actions you want your loop to perform, but if you put false for the fourth parameter in the fith parameter you put the actions you want your loop to perform. [e.g. doge.fetch(“i”,0,”i < 5”,true,1,doge.bark(i))]</p><h2>doge.choose(ifCond,ifCode,numElif,elifCond,elifCode,isElse,elseCode)</h2>
 <p class="tab">This method creates an if statement. For the first parameter you put the conditional statement for your if statement, for the second parameter put the code that you want to go in your if statement, if you are not planning on having elifs or elses leave the rest blank. For the third parameter, put the number of else ifs that you want. For the fourth parameter put the condition(s) that you want your else if(s) to check. For the fith parameter put the code you want to go inside of your else if(s) to separate the different else if code put a blank quotation mark when you want to move to the code for your next else if(s) Leave the rest blank if you are not planning on creating any else’s. For the sixth parameter put true/false for if you are going to have an else. For the seventh parameter put the code that you want to go inside of your else. [e.g. doge.choose(“1>2”, doge.bark(‘1>2’), 2, “5<4”,"6<7”,doge.bark(‘5<4’), “”, doge.bark(‘6<7’)) or doge.choose(“1>2”, doge.bark(‘1>2’), 2, “5<4”,"6<5”,doge.bark(‘5<4’), “”, doge.bark(‘6<5’),true,doge.bark(’none were true!’))]</p>
   <h2>doge.howl(errorType, attemptedVal)</h2>
   <p class="tab">This method outputs an error. The error detection in doge++ is in simple terms, not very good, for the more experienced programmers you can look in the console by inspecting the page and an error will show up there. The error types are !list, and !var. In the first parameter you put the error type and in the second parameter you put the value that was attempted. [e.g. doge.howl(“!var”, “test”) will result in ERROR: Bone not found in hole test]</p>
+  <h2>Helpful Tips:</h2>
+  <ul>
+    <li>You can use JavaScript functions and methods such as Math() and Date(), but the way that the editor reads the code is line by line, so you can only type one line of JS at a time, so you cannot create a JS function that spans multiple lines</li>
+    <li>If you are participating in the scavenger hunt you can inspect the page or view the Github page <a href="https://github.com/Dogeplusplusdev/DogePlusPlusLang">here</a>.</li>
+    <li>Inside of a function when you are entering the code that you want to run you do not have to put quotation marks around it.</li>
+  </ul>
   <a href="https://3erc1e4bvanrdzas82cngnw1-wpengine.netdna-ssl.com/wp-content/uploads/2019/06/riddle_4_770.jpg" class="weirdText">Click Me!</a>
     </div>
   </head>
@@ -50,6 +58,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 </style>
   <body>
+    <script src="random.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
