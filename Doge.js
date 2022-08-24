@@ -219,6 +219,9 @@ function secret(){
 }
 //START EDITOR
 function log(printStatement){
+	if(document.getElementById("runArea").value == "hehehehaw"){
+		alert("You are a horrible person");
+	}
    var editAreaText = document.getElementById("runArea").value += printStatement + "\n";
 }
 function runFunc(){
