@@ -227,9 +227,6 @@ function runFunc(){
   editText = editText.replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
   editText = makeList(editText); 
   console.log(editText)
-	if(document.getElementById("runArea").value.contains("hehehehaw")){
-		alert("You are a horrible person");
-	}
   for(var i = 0;i<editText.length;i++){
     eval(editText[i])
   }
