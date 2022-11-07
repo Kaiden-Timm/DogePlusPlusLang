@@ -1,6 +1,7 @@
+var bannerChanged = false;
 class Doge {
   bark(text){
-    log(text)
+    log(text);
   }
   sniff(string){
     return prompt(string)
@@ -222,6 +223,11 @@ function log(printStatement){
    var editAreaText = document.getElementById("runArea").value += printStatement + "\n";
 }
 function runFunc(){
+   if(!bannerChanged){
+      var bannerText = document.getElementById("banner")
+      bannerText.innerHTML += "<br></br> Scroll down to see the output!"
+      bannerChanged = true
+   }
   var runArea = document.getElementById("runArea").value = "";
   var editText = document.getElementById("editArea").value;
   editText = editText.replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
